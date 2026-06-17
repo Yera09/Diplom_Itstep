@@ -1,0 +1,108 @@
+/* Обнуление стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+    --primary-color: #00b05c; /* Фирменный зеленый Aviata */
+    --primary-hover: #00944d;
+    --dark-bg: #1e293b;
+    --light-bg: #f8fafc;
+    --text-main: #334155;
+    --gray-border: #e2e8f0;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ШАПКА САЙТА (Flexbox) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--dark-bg);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* ПОДВАЛ */
+.footer {
+    background: var(--dark-bg);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+/* СТИЛИ КНОПОК И ФОРМ */
+.btn-main {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn-main:hover {
+    background: var(--primary-hover);
+}
+
+.btn-main:active {
+    transform: scale(0.98);
+}
+
+/* АДАПТИВНОСТЬ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
