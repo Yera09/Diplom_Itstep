@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Контакты и Авторизация | EcoKazakhstan</title>
+=======
+    <title>Регистрация профиля | EcoKazakhstan</title>
+>>>>>>> 8e13cada53b8ee2a4988d341edc03ccd88c8e698
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +21,11 @@
                     <li><a href="nature.html">Заповедники</a></li>
                     <li><a href="green-tech.html">Эко-инициативы</a></li>
                     <li><a href="blog.html">Новости</a></li>
+<<<<<<< HEAD
                     <li><a href="profile.php">Кабинет</a></li>
+=======
+                    <li><a href="contacts.html" class="active">Присоединиться</a></li>
+>>>>>>> 8e13cada53b8ee2a4988d341edc03ccd88c8e698
                 </ul>
             </nav>
         </div>
@@ -26,6 +34,7 @@
     <main>
         <section class="hero-section">
             <div class="container">
+<<<<<<< HEAD
                 <h1>Присоединяйтесь к нам</h1>
                 <p>Станьте частью экологического движения волонтеров Казахстана или свяжитесь с нами для сотрудничества.</p>
             </div>
@@ -100,6 +109,44 @@
 
                 </div>
 
+=======
+                <h1>Присоединяйтесь к нашему движению</h1>
+                <p>Создайте личный профиль, чтобы отслеживать свои эко-инициативы, участвовать в волонтерских акциях и сохранять природу Казахстана вместе с нами.</p>
+            </div>
+        </section>
+
+        <section class="form-section-wrapper">
+            <div class="container">
+                <form class="auth-form" action="send.php" method="POST">
+                    <h2 class="auth-title">Создать аккаунт</h2>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Ваше имя</label>
+                        <input type="text" name="full_name" class="auth-input" placeholder="Введите имя" required>
+                    </div>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Электронная почта</label>
+                        <input type="email" name="email" class="auth-input" placeholder="example@mail.kz" required>
+                    </div>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Номер телефона</label>
+                        <input type="tel" name="phone" class="auth-input" placeholder="+7 (707) 123-4567" required>
+                    </div>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Пароль</label>
+                        <input type="password" name="password" class="auth-input" placeholder="Придумайте надежный пароль" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Зарегистрироваться</button>
+
+                    <div class="auth-footer-links">
+                        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                    </div>
+                </form>
+>>>>>>> 8e13cada53b8ee2a4988d341edc03ccd88c8e698
             </div>
         </section>
     </main>
@@ -110,6 +157,7 @@
             <p>Республика Казахстан</p>
         </div>
     </footer>
+<<<<<<< HEAD
 
     <script>
     function toggleAuthForm(mode) {
@@ -125,5 +173,7 @@
         }
     }
     </script>
+=======
+>>>>>>> 8e13cada53b8ee2a4988d341edc03ccd88c8e698
 </body>
 </html>

@@ -453,6 +453,7 @@ body {
 
 .profile-btn-submit:active {
     transform: translateY(0);
+<<<<<<< HEAD
 }
 /* ==========================================
    СТИЛИ ЛИЧНОГО КАБИНЕТА (В ЗЕЛЕНОМ ЭКО-СТИЛЕ)
@@ -558,4 +559,6 @@ body {
 
 .profile-btn-submit:hover {
     background-color: #27ae60;
+=======
+>>>>>>> 8e13cada53b8ee2a4988d341edc03ccd88c8e698
 }
