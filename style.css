@@ -20,7 +20,7 @@ body {
 
 
 .main-header {
-    background-color: #1b3a24; /* Глубокий экологичный зеленый */
+    background-color: #1b3a24;
     color: #fff;
     padding: 20px 0;
     position: sticky;
@@ -43,7 +43,7 @@ body {
 }
 
 .logo span {
-    color: #2ecc71; /* Ярко-зеленый акцент */
+    color: #2ecc71; 
 }
 
 .main-nav ul {
@@ -205,4 +205,357 @@ body {
     .hero-section h1 {
         font-size: 1.8rem;
     }
+} 
+/* ==========================================
+   СТИЛИ ДЛЯ ФОРМЫ РЕГИСТРАЦИИ В ОБЩЕМ СТИЛЕ СТРАНИЦ
+   ========================================== */
+.form-section-wrapper {
+    padding: 60px 0;
+    background-color: #f8faf9; /* Природный мягкий светлый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px; /* Такое же скругление, как у карточек проекта */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Легкая современная тень */
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 4px solid #1b3a24; /* Фирменный темно-зеленый цвет из шапки */
+}
+
+.auth-title {
+    color: #1b3a24; /* Фирменный темно-зеленый цвет */
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.auth-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.auth-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект фокуса в фирменном стиле (светло-зеленый акцент) */
+.auth-input:focus {
+    outline: none;
+    border-color: #2ecc71; 
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.15);
+}
+
+/* Кнопка в стиле главных кнопок сайта (btn-primary) */
+.auth-btn {
+    display: block;
+    width: 100%;
+    background-color: #1b3a24; /* Тот же цвет, что и у шапки/кнопок на главной */
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+/* Эффект при наведении на кнопку */
+.auth-btn:hover {
+    background-color: #27ae60; /* Плавный переход в ярко-зеленый при наведении */
+    transform: translateY(-1px);
+}
+
+.auth-btn:active {
+    transform: translateY(0);
+}
+
+/* Адаптивность для мобильных телефонов */
+@media (max-width: 480px) {
+    .auth-form {
+        padding: 25px 20px;
+    }
+}
+/* Блок с переходом на страницу входа под кнопкой */
+.auth-footer-links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+.auth-footer-links a {
+    color: #1b3a24; /* Фирменный темно-зеленый цвет */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-left: 5px;
+}
+
+/* Эффект при наведении на ссылку «Войти» */
+.auth-footer-links a:hover {
+    color: #2ecc71; /* Меняется на ярко-зеленый */
+    text-decoration: underline; /* Появляется подчеркивание */
+}
+/* ==========================================
+   СТИЛИ ДЛЯ СТРАНИЦЫ ПРОФИЛЯ ПОЛЬЗОВАТЕЛЯ
+   ========================================== */
+/* ==========================================
+   ЭКО-СТИЛИ ДЛЯ ЛИЧНОГО КАБИНЕТА
+   ========================================== */
+.profile-section-wrapper {
+    padding: 60px 0;
+    background-color: #f8faf9; /* Мягкий светлый фон */
+}
+
+.eco-profile-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px; /* Скругление как у карточек на сайте */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Легкая тень */
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 4px solid #1b3a24; /* Фирменная темно-зеленая полоса */
+    text-align: center;
+}
+
+.profile-card-title {
+    color: #1b3a24;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-welcome {
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.profile-username {
+    color: #2ecc71; /* Выделение ника ярко-зеленым */
+    font-weight: bold;
+}
+
+/* Контейнер для зеленой аватарки */
+.profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.profile-avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e8f5e9; /* Светло-зеленый эко-фон */
+    border: 2px solid #2ecc71; /* Зеленая рамка */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar-circle:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.profile-avatar-circle svg {
+    width: 65px;
+    height: 65px;
+}
+
+/* Поля формы */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile-group {
+    margin-bottom: 18px;
+}
+
+.profile-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.profile-input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-input:focus {
+    outline: none;
+    border-color: #2ecc71;
+    box-shadow: 0 0 6px rgba(46, 204, 113, 0.15);
+}
+
+/* Стилизация выбора файла */
+.profile-file-input {
+    font-size: 0.85rem;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Фирменная кнопка в стиле всего сайта */
+.profile-btn-submit {
+    background-color: #1b3a24; /* Темно-зеленый основной цвет */
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-btn-submit:hover {
+    background-color: #2ecc71; /* При наведении меняется на ярко-зеленый */
+    transform: translateY(-1px);
+}
+
+.profile-btn-submit:active {
+    transform: translateY(0);
+}
+/* ==========================================
+   СТИЛИ ЛИЧНОГО КАБИНЕТА (В ЗЕЛЕНОМ ЭКО-СТИЛЕ)
+   ========================================== */
+.profile-section-wrapper {
+    padding: 60px 0;
+    background-color: #f8faf9;
+    display: flex;
+    justify-content: center;
+}
+
+.eco-profile-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 4px solid #1b3a24; /* Фирменный зеленый */
+    text-align: center;
+}
+
+.profile-card-title {
+    color: #1b3a24;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.profile-welcome {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.profile-username {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.profile-avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e8f5e9;
+    border: 3px solid #2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-avatar-circle svg {
+    width: 70px;
+    height: 70px;
+}
+
+.profile-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.profile-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+.profile-input, .profile-file-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.profile-input:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+.profile-btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #1b3a24;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-btn-submit:hover {
+    background-color: #27ae60;
 }

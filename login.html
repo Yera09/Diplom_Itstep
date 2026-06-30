@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в профиль | EcoKazakhstan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">Eco<span>Kazakhstan</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="problems.html">Проблемы</a></li>
+                    <li><a href="nature.html">Заповедники</a></li>
+                    <li><a href="green-tech.html">Эко-инициативы</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                    <li><a href="contacts.html" class="active">Присоединиться</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Авторизация</h1>
+                <p>Войдите в свой личный профиль для управления настройками и участия в эко-проектах.</p>
+            </div>
+        </section>
+
+        <section class="form-section-wrapper">
+            <div class="container">
+                <form class="auth-form" action="database.php" method="POST">
+                    <h2 class="auth-title">Войти в аккаунт</h2>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Электронная почта</label>
+                        <input type="email" name="email" class="auth-input" placeholder="example@mail.kz" required>
+                    </div>
+                    
+                    <div class="auth-group">
+                        <label class="auth-label">Пароль</label>
+                        <input type="password" name="password" class="auth-input" placeholder="Введите ваш пароль" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Войти</button>
+
+                    <div class="auth-footer-links">
+                        <p>Еще нет аккаунта? <a href="contacts.html">Зарегистрироваться</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 EcoKazakhstan. Экологический проект.</p>
+            <p>Республика Казахстан</p>
+        </div>
+    </footer>
+</body>
+</html>
